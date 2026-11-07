@@ -1,0 +1,220 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+
+<title>Adarsh Ki Vaani ™️</title>
+<meta name="description" content="Welcome to Adarsh Ki Vaani. Join our official Telegram channel.">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1748234553685853');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1748234553685853&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background:
+    radial-gradient(ellipse at 50% 35%, #29200e 0%, transparent 48%),
+    linear-gradient(145deg, #080808, #11100d, #050505);
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 370px;
+  padding: 27px 20px 23px;
+  text-align: center;
+  border: 1px solid rgba(218,177,83,0.35);
+  border-radius: 21px;
+  background: rgba(255,255,255,0.045);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow:
+    0 12px 45px rgba(0,0,0,0.55),
+    inset 0 1px 1px rgba(255,255,255,0.10),
+    0 0 25px rgba(212,168,70,0.07);
+}
+
+.logo {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #d6ad55;
+  background: linear-gradient(145deg,#3a2b12,#100d08);
+  color: #f4d58c;
+  font-family: Georgia,serif;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(218,177,83,0.19);
+}
+
+.tag {
+  color: #d9b86d;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+h1 {
+  font-family: Georgia,serif;
+  font-size: 27px;
+  line-height: 1.2;
+  color: #f1d18a;
+  margin-bottom: 9px;
+}
+
+.description {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #c4c0b6;
+  margin-bottom: 19px;
+}
+
+.divider {
+  width: 55px;
+  height: 2px;
+  margin: 0 auto 17px;
+  background: linear-gradient(90deg,transparent,#e6c16c,transparent);
+}
+
+.join-btn {
+  width: 100%;
+  display: block;
+  padding: 15px 12px;
+  border: 1px solid #f5d78d;
+  border-radius: 11px;
+  background: linear-gradient(110deg,#a87925,#f0d18a,#b88934);
+  color: #171006;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  box-shadow: 0 5px 20px rgba(204,159,65,0.2);
+  transition: transform .2s ease;
+  cursor: pointer;
+}
+
+.join-btn:active {
+  transform: scale(0.97);
+}
+
+.join-btn.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.footer {
+  margin-top: 16px;
+  color: #77736a;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+
+<body>
+
+<main class="container">
+
+  <div class="logo">AV</div>
+
+  <div class="tag">Official Telegram Channel</div>
+
+  <h1>ADARSH KI VAANI ™️</h1>
+
+  <div class="divider"></div>
+
+  <p class="description">
+    Welcome to Adarsh Ki Vaani.<br>
+    Join our official Telegram channel and stay connected.
+  </p>
+
+  <a
+    href="https://t.me/+i0CF4kU9VpRhOWQ1"
+    class="join-btn"
+    id="joinButton"
+  >
+    ✦ JOIN CHANNEL NOW
+  </a>
+
+  <div class="footer">
+    OFFICIAL COMMUNITY • ADARSH KI VAANI
+  </div>
+
+</main>
+
+<script>
+(function () {
+  const button = document.getElementById('joinButton');
+
+  let eventFired = false;
+
+  button.addEventListener('click', function(e) {
+
+    if (eventFired) {
+      e.preventDefault();
+      return;
+    }
+
+    eventFired = true;
+    e.preventDefault();
+ button.classList.add('loading');
+    button.textContent = 'CONNECTING...';
+
+    // Fire Subscribe exactly once per page load
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'Subscribe');
+    }
+
+    // Redirect to Telegram
+    setTimeout(function() {
+      window.location.href =
+        'https://t.me/+i0CF4kU9VpRhOWQ1';
+    }, 350);
+
+  }, { once: false });
+})();
+</script>
+
+</body>
+</html>
